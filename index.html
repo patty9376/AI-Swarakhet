@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI SwaraKhet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div class="login-container" id="loginContainer">
+    <h2>🌾 AI SwaraKhet</h2>
+    <p>Login to continue</p>
+
+    <input type="text" id="usernameInput" placeholder="Enter your name" />
+    <input type="tel" id="mobileInput" placeholder="Enter mobile number" maxlength="10" />
+
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <!-- CHAT SCREEN -->
+  <div class="chat-container hidden" id="chatContainer">
+
+    <div class="chat-header">
+      <div>🌾 AI SwaraKhet</div>
+      <p id="welcomeUser"></p>
+      <div class="header-actions">
+        <button id="logoutBtn">🚪 Logout</button>
+        <button id="clearHistoryBtn">🗑</button>
+      </div>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-input">
+      <button id="micBtn">🎤</button>
+      <input type="text" id="textInput" placeholder="Bolkar ya likhkar poochiye..." />
+      <button id="sendBtn">➤</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
